@@ -16,12 +16,12 @@ class App extends React.Component {
     		<div className='container'>
     			<Nav />
     			<Switch>
-    			<Route exact path='/' component={Home} />
-    			<Route exact path='/battle' component={Battle} />
+    			  <Route exact path='/' component={Home} />
+    			  <Route exact path='/battle' component={Battle} />
       			<Route path='/popular' component={Popular} />
-				<Route render={function (){
-					return <p>Not Found</p>
-				}} />
+				    <Route render={function (){
+					     return <p>Not Found</p>
+				    }} />
       			</Switch>
       		</div>
     	</Router>
